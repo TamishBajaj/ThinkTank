@@ -1,0 +1,42 @@
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+.grid h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.grid p{
+    font-size: 1.7rem;
+    opacity: 0.8;
+    
+}
+
+.secContainer .grid{
+    padding: 3rem;
+    border-radius: 10%;
+    background: #FDAF7B;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.secContainer .grid span{
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+

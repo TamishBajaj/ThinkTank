@@ -1,0 +1,11 @@
+.mobile_main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),url('../../assets/mb_bg.gif');
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Do not repeat the background */
+    background-position: center; /* Center the background */
+    
+    
+}
+
+

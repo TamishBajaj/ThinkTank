@@ -1,0 +1,61 @@
+.industy{
+    height: 100%;
+    width: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+.contnt{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+
+.contnt h1{
+    font-size:2.7rem;
+    font-weight: 800;
+}
+
+.contnt h3{
+    font-size: 1.3rem;
+}
+
+.card_roww{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.card_detail{
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.industry_img{
+    height: 110px;
+    width: 110px;
+   
+}
+
+.card_detail{
+    transition:transform 0.3s ease;
+}
+
+.card_detail h4{
+    font-size: 1.3rem;
+}
+.card_detail:hover{
+    transform: scale(1.1);
+}

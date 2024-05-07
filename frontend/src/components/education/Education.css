@@ -1,0 +1,132 @@
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+    color: white;
+}
+.line{
+    width:60%;
+    margin-top: -50px;
+    border-bottom: 5px solid aqua;
+    margin-left: 240px;
+    margin-bottom: 80px;
+
+}
+
+.education{
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+}
+.timeline-items::before{
+    content:"";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%; /* Each item takes up the full width */
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    /* padding-right: calc(50%+30px); */
+    left: calc(50% + 30px); /* Align items on odd positions to the right side */
+}
+.timeline-item:nth-child(even){
+    left: calc(50% - 520px); /* Align items on even positions to the left side */
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: calc(50% - 80px); /* Align dot to the right side */
+}
+
+
+
+.timeline-dot{
+    height: 15px; /* Reduce dot size */
+    width: 15px; /* Reduce dot size */
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: -2.5%; /* Align dot to the center */
+    transform: translateX(-50%);
+    border-radius: 50%; /* Make dot round */
+    z-index: 2; /* Ensure dot appears above timeline line */
+            
+}
+
+
+.timeline-content{
+    max-width: 500px; 
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 20px 30px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
+
+
+
+
+

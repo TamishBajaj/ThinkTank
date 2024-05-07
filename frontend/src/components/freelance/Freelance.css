@@ -1,0 +1,54 @@
+.freelance{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #E3F4F4;
+}
+
+.freelance_arrow{
+    height: 39px;
+    width: 39px;
+}
+
+.main_head{
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-left: 340px;
+    margin-top: 20px;
+    
+}
+
+.main_p{
+    font-size: 1.5rem;
+    margin-left: 470px;
+    margin-bottom: 20px;
+}
+
+.freelance_option{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    padding: 30px 25px;
+
+}
+
+
+.freelance_detail{
+    display: flex;
+    
+}
+
+.freelance_detail h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.img_contai{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+
+.freelance_option p{
+    color: #7D7C7C;
+}

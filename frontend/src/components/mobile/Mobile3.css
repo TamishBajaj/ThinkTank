@@ -1,0 +1,65 @@
+.mob_details_main{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.det_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.det_head h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+  
+}
+
+.det_head p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    
+
+}
+
+.det_card_mob{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    background-color: #E3F4F4;
+}
+
+.det_icn{
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.det_card{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px 10px;
+    transition: 0.3s ease;
+}
+
+.det_card:hover{
+    transform: scale(1.05);
+}
+
+.det_det h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.det_det p{
+    font-size: 1.1rem;
+}
+
+
+

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: poppins,
+    sans-serif;
+
+}
+
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#00ffee;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Add a border for separation */
+}
+.logo {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9); /* Adjust text color for better visibility */
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span {
+    text-shadow: 0 0 10px var(--main-color); /* Adjust text shadow for better visibility */
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.7); /* Adjust text color for better visibility */
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: white; /* Change text color on hover */
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+

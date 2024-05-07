@@ -1,0 +1,113 @@
+/* styles.css */
+
+.how-it-works-section {
+    padding: 100px 0;
+    /* background-color: ; Light gray background */
+    position: relative;
+    overflow: hidden;
+   
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; /* Ensure content stays above the background */
+}
+  .how-it-works-section::before {
+    content: '';
+    position: absolute;
+    top: -100px; /* Adjust position as needed */
+    right: -100px; /* Adjust position as needed */
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    border-radius: 50%;
+    background: radial-gradient(circle at 100% 0%, transparent 20%, #40A2E3 25%);
+    
+
+}
+
+/* Curvy design at the bottom left corner */
+.how-it-works-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; /* Adjust position as needed */
+    left: -100px; /* Adjust position as needed */
+    width: 300px;
+    height: 280px;
+    background-color: #40A2E3;
+    border-radius: 50%;
+    
+}
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #86B6F6;
+    font-weight: 800;
+  }
+  
+  .section-header h2 {
+    font-size: 3rem;
+  }
+  
+  .line {
+    border: none;
+    border-top: 2px solid #40A2E3; /* Dark line */
+    width: 100%;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  .step {
+    flex: 0 1 calc(50% - 20px);
+    background-color: #FF9800; /* White background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 40px;
+    position: relative; /* Required for pseudo-element */
+    overflow: hidden; /* Ensure the glow doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Initial shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+    z-index: -1; /* Ensure the glow is behind the card content */
+  }
+  
+  .step:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(163, 255, 214, 0.7); /* Shadow effect on hover */
+  }
+  
+  .step:hover::before {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7); /* Larger shadow on hover */
+  }
+  
+  .step h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .step p {
+    font-size: 1.4rem;
+    color: white;
+    
+  }
+  

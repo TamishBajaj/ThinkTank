@@ -1,0 +1,50 @@
+.webtwo_cont{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+    background-color: #FFF8E3;
+    
+}
+
+.web_imgs{
+    border-top-right-radius: 60%; /* Rounded border radius for the top-right corner */
+    border-bottom-right-radius: 60%;
+    padding-right: 60px;
+}
+
+.webtwo_detail h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.webtwo_detail p{
+    margin-top: 20px;
+    padding-right: 40px;
+    font-size: 1.2rem;
+
+}
+
+.webtwo_detail{
+    margin-top: 40px;
+   
+    
+}
+
+.webi_btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    background-color: #15F5BA;
+    transition: 0.3s ease;
+}
+
+.webi_btn:hover{
+    transform: scale(1.1);
+}

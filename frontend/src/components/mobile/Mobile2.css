@@ -1,0 +1,59 @@
+.mobile_cards{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_heads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile_heads h1{
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.mobile_heads h3{
+    font-size: 1.3rem;
+    margin-top: 10px;
+
+}
+.mobile_detcards{
+    padding: 20px;
+}
+
+.mobile_row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+
+.mobile_carddetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 20px;
+    transition: 0.3s ease;
+}
+
+.mobile_carddetail:hover{
+    transform: scale(1.05);
+}
+
+.mobile_carddetail h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.mobile_carddetail p{
+    margin:10px 0px;
+}

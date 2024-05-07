@@ -1,0 +1,175 @@
+.getevents_main{
+    background-color: #E3F4F4;
+    padding: 20px;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+    height: 100vh;
+    border: 1px solid white;
+    border-radius: 1.1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: white;
+}
+
+
+.left{
+    width: 70%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    
+}
+.right{
+    width: 25%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.division_cont:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subcolumn1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subcolumn1 h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.sub_img{
+    height: 30px;
+    width: 30px;
+}
+.row_two{
+    display: flex;
+    margin-top: 10px;
+}
+.row_two h3{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.row_three{
+    display: flex;
+    margin-top: 10px;
+}
+
+.row_three h3{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.row_four h3{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+    font-weight: 800;
+}
+
+.description_btn{
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    border-radius: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.description_btn:hover{
+    transform: scale(1.05);
+    border: 1px solid aqua;
+}
+
+
+.subcolumn2 h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.subcolumn2 p{
+    font-size: 1.1rem;
+}
+
+.dates{
+    display: flex;
+    margin-top: 20px;
+}
+
+.start_date h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.End_date{
+    margin-left: 40px;
+}
+.End_date h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+.right_icon{
+    height: 100px;
+    width: 100px;
+}
+
+.button_head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+
+
+
+.button_head h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.reg_btn{
+    padding: 7px 14px;
+    border: 1px solid black;
+    border-radius: 1.1rem;
+    margin-right: 20px;
+   
+   
+    transition: 0.3s ease;
+}
+
+.reg_btn:hover{
+    transform: scale(1.05);
+    background-color: aqua;
+    
+    
+    color: white;
+
+}
+
+.r1{
+    display: flex;
+
+}
+
+.r1 h3{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.content_r{
+    margin-left: 10px;
+}

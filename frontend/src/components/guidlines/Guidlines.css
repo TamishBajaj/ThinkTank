@@ -1,0 +1,66 @@
+.guidlines{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.eligibilty h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.row_dtl{
+    display: flex;
+    
+    margin-bottom: 10px;
+}
+
+.icn{
+    margin-top:8px ;
+    margin-right: 10px;
+}
+.row_dtl h3{
+    font-size: 1.2rem;
+}
+
+.key_instruction h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.prizes h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.prize_column{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+   border-radius: 1.1rem;
+    border: 1px solid black;
+    transition: 0.3s ease;
+}
+
+.trophy_img{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.card_prize{
+    display: flex;
+}
+
+.prize_text{
+    padding:20px;
+}
+

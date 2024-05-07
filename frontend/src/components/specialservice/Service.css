@@ -1,0 +1,115 @@
+.Service_contain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Service_contain h1{
+    margin-top: 40px;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.domain_buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+
+}
+
+.domain_buttons .web_button{
+    background-color: #F94C10;
+    padding: 10px 25px;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+   
+}
+.web_button:hover{
+    transform: scale(1.1);
+}
+
+.domain_buttons .mobile_button{
+    background-color:#E384FF ;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.mobile_button:hover{
+    transform: scale(1.1);
+}
+
+.domain_buttons .buisness_button{
+    background-color:#00FFD1 ;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.buisness_button:hover{
+    transform: scale(1.1);
+}
+
+.domain_buttons .digital_button{
+    background-color:#F637EC ;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.digital_button:hover{
+    transform: scale(1.1);
+}
+
+.service_cardss{
+    display: flex;
+    flex-direction: column;
+    background-color: #E3F4F4;
+    margin: 30px 10px;
+}
+
+.cards_row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Four columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    margin: 20px;
+}
+
+.service_icon{
+    width: 130px;
+    height: 130px;
+}
+
+.one_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.one_card:hover {
+    transform: scale(1.05);
+    border: solid 1px black;
+}
+
+.one_card h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.one_card p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.icon_button{
+    width: 100px;
+    height: 100px;
+}
+

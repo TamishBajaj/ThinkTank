@@ -1,0 +1,52 @@
+/* styles.css */
+
+.about-us-section {
+    padding: 100px 0;
+    background-color: #f9f9f9; /* Light gray background */
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),url(../../assets/Feature-8.jpg);
+    background-size: cover;
+  }
+  
+  .about-us-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-us-section .section-heading {
+    margin-bottom: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:white; 
+  }
+  
+  .about-us-section p {
+    font-size: 1.2rem;
+    color: white; /* Medium gray text color */
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section .about-description {
+    margin-bottom: 40px;
+  }
+  
+  .about-us-section .about-image img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  

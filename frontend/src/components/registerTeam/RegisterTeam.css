@@ -1,0 +1,87 @@
+.register-team-container {
+    background-image: url('../../assets/sunset-5.jpg'); /* Sunset background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-wrapper {
+    background-color: black; /* Black background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glowing effect */
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;  /* Dark gray text color */
+    font-size: 2rem;
+    
+   
+  }
+  
+  .separator {
+    border: none;
+    border-bottom: 3px solid #40A2E3; /* Red line */
+    width: 100%;
+   margin-bottom: 30px;
+  }
+
+  .team-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: white; /* White text color */
+    background-color: #333; /* Dark gray background */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+    
+  }
+  
+  textarea.input-field {
+    height: 100px;
+  }
+  .wide-input {
+    width: 100%; /* Make input boxes wider */
+  }
+  
+  .submit-btn {
+    background-color: #008DDA; /* Orange button background color */
+    color: white; /* White button text color */
+    border: none;
+    padding: 15px 30px; /* Increased button padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Increased button text size */
+    box-shadow: 0 0 10px rgba(65, 201, 226, 0.5); /* Red glowing effect */
+    display: flex; /* Use flexbox for aligning content */
+    justify-content: center; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+  }
+  .arrow {
+    margin-left: 5px; /* Add some space between the text and the icon */
+  }
+  
+  
+  .submit-btn:hover {
+    transform: translateY(-5px); /* Pop-out effect */
+    box-shadow: 0 0 20px rgba(64, 162, 227, 0.6); /* Stronger glowing effect on hover */
+    background-color: #387ADF;
+  }
+  
+  .span__item{
+    color: #96EFFF;
+  }
+
+  

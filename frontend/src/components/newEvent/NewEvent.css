@@ -1,0 +1,96 @@
+.create-event-container {
+    background-image: url('../../assets/sunset-1.jpg'); /* Sunset background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .form-wrapper {
+    background-color: black; /* Black background */
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red glowing effect */
+    margin-top: 70px;
+    width: 60%;
+
+  }
+  .form-wrapper h1{
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;  /* Dark gray text color */
+    
+   
+  }
+  
+  .separator {
+    border: none;
+    border-bottom: 3px solid red; /* Red line */
+    width: 100%;
+   margin-bottom: 30px;
+  }
+
+  .event-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: white; /* White text color */
+    background-color: #333; /* Dark gray background */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+    
+    
+  }
+  
+  textarea.input-field {
+    height: 100px;
+  }
+  .wide-input {
+    width: 100%; /* Make input boxes wider */
+  }
+  
+  .submit-btn {
+    background-color: #ff8c00; /* Orange button background color */
+    color: white; /* White button text color */
+    border: none;
+    padding: 15px 30px; /* Increased button padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Increased button text size */
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5); /* Red glowing effect */
+    display: flex; /* Use flexbox for aligning content */
+    justify-content: center; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+  }
+  .arrow {
+    margin-left: 5px; /* Add some space between the text and the icon */
+  }
+  
+  
+  .submit-btn:hover {
+    transform: translateY(-5px); /* Pop-out effect */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6); /* Stronger glowing effect on hover */
+    background-color: #B80000;
+  }
+  
+  .span__item{
+    color: #B80000;
+  }
+
+  

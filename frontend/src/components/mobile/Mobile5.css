@@ -1,0 +1,79 @@
+.mobile_proj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj_headi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.proj_headi h1{
+    font-size: 2.7rem;
+    font-weight: 800;
+
+}
+
+.proj_headi h3{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.mobile_toproj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 20px;
+}
+
+.first_left{
+    
+   
+    
+    padding: 20px;
+
+}
+
+.first_left h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.first_left p{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    
+
+}
+
+.proj_buttons{
+    margin-left: 140px;
+}
+
+.demo_btn{
+    padding: 10px 20px;
+    background-color: #F94C10;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+}
+
+.git_btn{
+    padding: 10px 20px;
+    background-color: #00FFD1;
+    border-radius: 1.2rem;
+    transition: transform 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 40px;
+}
+.bute:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,119 @@
+.main__container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav{
+    width: 100%;
+    /* background-color: black; */
+    
+    color: #fff;
+    padding: 4px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    /* margin-top: 10px; */
+    /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.logo{
+    width: 180px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    color: aquamarine;
+}
+
+.nav__button{
+    background: #fff;
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: 0.3s ease;
+    
+}
+
+.nav__button:hover{
+    transform: scale(1.1);
+    
+}
+.menu__icon{
+    display: none;
+}
+
+/* -------media Query------------- */
+
+
+@media (max-width: 1200px){
+    .main__container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav__button{
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 1000px){
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width: 840px){
+    nav{
+        padding: 15px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background:#212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu__icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -200px;
+    }
+
+
+}

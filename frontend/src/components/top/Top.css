@@ -1,0 +1,147 @@
+/* styles.css */
+
+.hero-section {
+  /* background-color: #007bff; */
+  padding: 150px 0;
+  color: #fff;
+ 
+ 
+  
+}
+.home-bannerImage-container {
+  position: absolute;
+  top: 5px;
+  right: -20px;
+  z-index: -2;
+  /* max-width: 700px; */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 50%;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-out;
+  color: #FF9800;
+  font-weight: 800;
+ 
+  
+  
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: slideInLeft 1s ease-out;
+  color: black;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #FF9800;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  margin-top: 30px;
+  opacity: 0.8;
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero-image {
+  width: 50%;
+  animation: slideInRight 1s ease-out;
+  
+}
+
+.hero-image img {
+  width: 100%;
+  height:450px;
+  border-radius: 50%;
+  /* border-radius: 1.5rem; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-left: 80px;
+  
+ 
+  
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #007bff;
+  }
+  to {
+    box-shadow: 0 0 20px 10px #00ffcc;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+}

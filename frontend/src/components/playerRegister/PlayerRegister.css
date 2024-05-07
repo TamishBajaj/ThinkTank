@@ -1,0 +1,87 @@
+.player-register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding: 40px 0;
+    background-color: #F6F5F5;
+}
+.color_b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_img{
+    width: 120px;
+    height: 120px;
+}
+
+.register_head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    ;
+}
+
+.register_head h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.player_detail{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    border: 1px solid black;
+    background-color: white;
+    
+
+}
+.player_detail h3{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input_reg{
+    width: 650px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 5px;
+}
+.abc{
+    margin-bottom: 20px;
+}
+
+.options{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.opt{
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.reg_btn{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 1.1rem;
+    font-size: 1.1rem;
+    transition: 0.3s ease ;
+    margin-top: 20px;
+}
+
+.reg_btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px  2px 2px  aqua;
+}

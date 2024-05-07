@@ -1,0 +1,110 @@
+.headi{
+    font-size: 3rem;
+    color: white;
+}
+
+.headin{
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.container.contact__container{
+    width: 80%; /* Increase container width */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust grid to one column for smaller screens */
+    gap: 5%; /* Reduce gap */
+    margin: 0 auto; /* Center container */
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__option > h4{
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.contact__option > h5{
+    font-size: 20px;
+}
+
+.contact__option{
+    background:var(--main-color);
+    padding: 3rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    
+}
+.bt{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.contact__option:hover{
+  background: transparent;
+  border-color: var(--color-primary-varient);
+
+}
+
+.contact__option-icon{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.btn{
+    color: white;
+    
+    font-size: 20px;
+}
+
+/* ------------------------------------------Form-------------------------------- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+input,textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-varient);
+    resize: none;
+    color: var(--color-white);
+}
+
+/* =====Media Queries (Medium devices)=============  */
+@media  screen and (max-width:1024px) and (min-width: 599px) {
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}   
+
+/* =====Media Queries (Small devices)============= */
+
+@media  screen and (max-width:600px) {
+
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+
+    }
+}
+
+
+

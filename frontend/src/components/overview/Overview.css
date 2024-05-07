@@ -1,0 +1,95 @@
+.overview__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.heading{
+    color: var(--main-color);
+    font-size: 6rem;
+    
+}
+.main__block{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 4rem;
+   
+}
+.para{
+
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.highlight__item{
+  color: var(--main-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.upper__block,.lower__block{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+}
+.icon{
+    
+    width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #4ca7d4, #3490c8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: rotateAndMove 10s ease-in-out infinite;
+}
+
+@keyframes rotateAndMove {
+    0% {
+      transform: translateY(0) rotate(0deg); /* Start position */
+    }
+    50% {
+      transform: translateY(-10px) rotate(180deg); /* Middle position */
+    }
+    100% {
+      transform: translateY(0) rotate(360deg); /* End position */
+    }
+  }
+.block{
+    width: 300px; /* Set the width of each block */
+  height: 300px; /* Set the height of each block */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #36454f;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center; /* Center the text horizontally */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px #3498db;
+  
+   
+  transition: transform 0.5s ease; /* Add transition for smooth hover effect */
+}
+
+
+.block:hover {
+    transform: perspective(800px) rotateX(-5deg) rotateY(5deg) scale(1.1) translateZ(50px);
+    cursor: pointer;
+  }
+
+  
+.block h3{
+    margin-top: 3rem;
+    
+}
+
