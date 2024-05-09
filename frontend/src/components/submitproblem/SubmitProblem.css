@@ -1,7 +1,7 @@
 .submitpb{
     display: flex;
     flex-direction: column;
-    
+    margin-top: 150px;
 }
 
 .pb_head{

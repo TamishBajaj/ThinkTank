@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png'
 import {Link} from 'react-scroll'
 import menuicon from  "../../assets/menu-icon.png"
 import tarf from '../../assets/target.gif'
+import thinklogo from '../../assets/thinklogo.png'
 
 const Navbar = ({ onLoginClick }) => {
 
@@ -14,7 +15,7 @@ const toggleMenu=()=>{
 
   return (
     <nav className='main__container'>
-        <img src={logo} alt="" className='logo' />
+        <img src={thinklogo} alt="" className='logox' />
         <ul className={mobileMenu ? '':'hide-mobile-menu'}>
             <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
             <li><Link to='Service_contain' smooth={true}  duration={500}>Services</Link></li>

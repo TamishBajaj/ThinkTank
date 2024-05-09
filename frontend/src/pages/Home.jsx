@@ -11,6 +11,8 @@ import Service from "../components/specialservice/Service";
 import Industry from "../components/industry/Industry";
 import Freelance from "../components/freelance/Freelance";
 import Contract from "../components/contract/Contract";
+import Workings from "../components/workings/Workings";
+import Team from "../components/team/Team";
 
 
 import React from 'react'
@@ -28,11 +30,13 @@ const home = () => {
         <Cards />
         
         
-        
-        <Projects />
+        <Workings />
+        {/* <Projects /> */}
+        <Team />
 
         <Industry />
-
+        
+        
         
         {/* <Features /> */}
         

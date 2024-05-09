@@ -1,6 +1,7 @@
 .getevents_main{
     background-color: #E3F4F4;
     padding: 20px;
+    margin-top: 130px;
 }
 
 .column{
@@ -101,7 +102,7 @@
 
 .dates{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .start_date h3{
