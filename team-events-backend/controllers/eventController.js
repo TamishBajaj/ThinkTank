@@ -1,6 +1,6 @@
 const Event = require('../models/Event');
 const User = require('../models/User'); // Import the User model
-const transporter = require('../utils/emailConfig');
+// const transporter = require('../utils/emailConfig');
 
 
 exports.createEvent=async(req,res)=>{

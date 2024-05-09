@@ -1,7 +1,8 @@
 // middleware/auth.js
 
 const jwt = require('jsonwebtoken');
-const { secretKey } = require('../utils/constants');
+// const { secretKey } = require('../utils/constants');
+require('dotenv').config()
 
 module.exports = (req, res, next) => {
   // Get token from header
@@ -19,7 +20,7 @@ module.exports = (req, res, next) => {
 
   try {
     // Verify token
-    const decoded = jwt.verify(token, secretKey);
+    const decoded = jwt.verify(token, process.env.secretKey);
 
     // Add user to request object
     req.user = decoded;
