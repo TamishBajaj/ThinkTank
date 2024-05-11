@@ -2,7 +2,7 @@
 
 const jwt = require('jsonwebtoken');
 // const { secretKey } = require('../utils/constants');
-require('dotenv').config()
+// require('dotenv').config()
 
 module.exports = (req, res, next) => {
   // Get token from header
