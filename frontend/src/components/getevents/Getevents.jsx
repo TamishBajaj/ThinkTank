@@ -9,6 +9,7 @@ import i3 from '../../assets/getevent3.gif'
 import i4 from '../../assets/getevent4.gif'
 
 import { useNavigate, useParams } from 'react-router-dom';
+import { BASE_URL } from '../../baseurl';
 
 const Getevents = () => {
     let { eventId } = useParams();
@@ -19,7 +20,7 @@ const Getevents = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch(`${process.env.BASE_URL}/events/${eventId}`);
+                const response = await fetch(`${BASE_URL}/events/${eventId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch events');
                 }

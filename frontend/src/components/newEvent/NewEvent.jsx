@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import './NewEvent.css'
 import { FaArrowRight } from "react-icons/fa";
-
+import { BASE_URL } from '../../baseurl';
 export const NewEvent = () => {
   const [formData, setFormData] = useState({
     companyName: '',
@@ -25,7 +25,7 @@ export const NewEvent = () => {
           'x-auth-token': `Bearer ${token}` // Include the JWT token in the request headers
         }
       };
-      const res = await axios.post(`${process.env.BASE_URL}/events/createEvent`, formData, config);
+      const res = await axios.post(`${BASE_URL}/events/createEvent`, formData, config);
       console.log(res.data); // Handle successful event creation (e.g., redirect user)
     } catch (err) {
       console.error(err.response.data);

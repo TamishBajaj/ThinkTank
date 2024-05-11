@@ -3,7 +3,7 @@ import './PlayerRegister.css'
 import axios from 'axios';
 
 import top from '../../assets/card1.gif'
-
+import { BASE_URL } from '../../baseurl';
 const PlayerRegister = ({ eventId }) => {
 
     const [formData, setFormData] = useState({
@@ -25,7 +25,7 @@ const PlayerRegister = ({ eventId }) => {
       const onSubmit = async e => {
         e.preventDefault();
         try {
-          const res = await axios.post(`${process.env.BASE_URL}/teams/registerTeam`, {
+          const res = await axios.post(`${BASE_URL}/teams/registerTeam`, {
             eventName: eventId,
             email,
             teamName,

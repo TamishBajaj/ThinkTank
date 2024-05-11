@@ -2,7 +2,7 @@
 import  { useState } from 'react';
 import axios from 'axios';
 import './RegisterTeam.css'
-
+import { BASE_URL } from '../../baseurl';
 const RegisterTeam = ({ eventId }) => {
   const [formData, setFormData] = useState({
     teamName: '',
@@ -18,7 +18,7 @@ const RegisterTeam = ({ eventId }) => {
   const onSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${process.env.BASE_URL}/api/v1/teams/registerTeam`, {
+      const res = await axios.post(`${BASE_URL}/api/v1/teams/registerTeam`, {
         eventName: eventId,
         teamName,
         memberNames: memberNames.split(','), // Convert memberNames string to array
