@@ -12,9 +12,7 @@ const submissionRoutes = require('./routes/submissions');
 
 const app = express();
 
-app.use(cors({
-  origin: '*' // Allow requests from frontend domain
-}));
+app.use(cors());
 app.use(express.json());
 
 // Middleware

@@ -10,7 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 
 import { IoMdMail } from "react-icons/io";
 import { FaLock } from "react-icons/fa";
-
+import { BASE_URL } from '../../config.js';
 
 import './Login.css'
 
@@ -30,9 +30,10 @@ const Login = () => {
 
     const onSubmit=async e=>{
        console.log("yes hitting")
+       console.log(BASE_URL)
         e.preventDefault();
         try{
-            const res=await axios.post('http://localhost:3000/api/v1/login',{email,password});
+            const res=await axios.post(`${BASE_URL}/api/v1/login`,{email,password});
             console.log("submitted")
             console.log(res.data)
             const { token } = res.data; // Assuming the token is returned in the response data
