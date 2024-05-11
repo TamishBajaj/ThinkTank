@@ -36,7 +36,7 @@ const Navbar = ({ onLoginClick }) => {
         <img src={thinklogo} alt="" className='logox' />
         <ul className={mobileMenu ? '':'hide-mobile-menu'}>
             <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
-            <li><Link to='Service_contain' smooth={true}  duration={500}>Services</Link></li>
+            <li><Link to='Servicess_contain' smooth={true}  duration={500}>Services</Link></li>
             <li><Link to='freee' smooth={true} offset={-150} duration={500}>About us</Link></li>
             <li><Link to='contract' smooth={true} offset={-260} duration={500}>let's Work</Link></li>
             <li><Link to='card_container' smooth={true} offset={-260} duration={500}>Events</Link></li>

@@ -6,7 +6,7 @@ const Hero = () => {
 
   const handleButtonClick = () => {
     // Find the target section by its class name
-    const webtwoSection = document.querySelector('.Service_contain');
+    const webtwoSection = document.querySelector('.Servicess_contain');
     // Scroll to the target section
     if (webtwoSection) {
       webtwoSection.scrollIntoView({ behavior: 'smooth' });
