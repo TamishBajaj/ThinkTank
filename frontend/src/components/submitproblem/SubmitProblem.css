@@ -67,3 +67,34 @@
     border: 1px solid aqua;
 
 }
+
+
+@media (max-width: 650px){
+
+    .pb_head h1{
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+    .pb_head h3{
+        font-size: 1.2rem;
+    }
+    .main_contform{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .problem_input{
+        width: 400px;
+    }
+    .form_right{
+        padding: 0px;
+    }
+    .spc{
+        margin-left: 110px;
+    }
+    .spt{
+        margin-left: 80px;
+    }
+    .event_creation{
+        margin-bottom: 20px;
+    }
+}

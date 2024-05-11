@@ -1,6 +1,6 @@
 .working_main{
     width: 100%;
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,4 +65,43 @@
     height: 100px;
     margin-left: 80px;
     margin-bottom: 50px;
+}
+
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+    .working_head h1{
+        font-size: 2rem;
+    }
+    .working_head h3{
+        font-size: 1.3rem;
+    }
+    .workflow_row{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .workflow_minus{
+        display: none;
+        margin-bottom: 40px;
+        
+    }
+    .workflow_plus{
+        margin-bottom: 40px;
+        
+    }
+
+    .boxi{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+    .boxi:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
 }

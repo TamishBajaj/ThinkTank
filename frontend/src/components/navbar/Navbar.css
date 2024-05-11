@@ -93,6 +93,7 @@ nav ul li:hover{
 @media (max-width: 840px){
     nav{
         padding: 15px 0;
+        
     }
     nav ul{
         position: fixed;

@@ -77,3 +77,27 @@
 .bute:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 650px){
+    .proj_headi h1{
+        font-size: 2rem;
+    }
+    .proj_headi h3{
+        font-size: 1.1rem;
+    }
+
+    .mobile_toproj{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    .proj_buttons{
+        display: flex;
+        /* flex-direction: column; */
+       
+    }
+    .bute{
+       
+        padding:7px 10px;
+    }
+}

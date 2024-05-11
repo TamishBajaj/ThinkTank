@@ -1,4 +1,4 @@
-.Service_contain{
+.Servicess_contain{
     height: 100%;
     width: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.Service_contain h1{
+.Servicess_contain h1{
     margin-top: 40px;
     font-size: 2.7rem;
     font-weight: 800;
@@ -62,14 +62,14 @@
     transform: scale(1.1);
 }
 
-.service_cardss{
+.servicess_cardss{
     display: flex;
     flex-direction: column;
     background-color: #E3F4F4;
     margin: 30px 10px;
 }
 
-.cards_row{
+.cardse_row{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Four columns with equal width */
     gap: 20px; /* Gap between grid items */
@@ -81,7 +81,7 @@
     height: 130px;
 }
 
-.one_card{
+.onee_card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,17 +92,17 @@
     transition: transform 0.3s ease;
 }
 
-.one_card:hover {
+.onee_card:hover {
     transform: scale(1.05);
     border: solid 1px black;
 }
 
-.one_card h3{
+.onee_card h3{
     font-size: 1.2rem;
     font-weight: 800;
     margin: 20px 0;
 }
-.one_card p{
+.onee_card p{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -113,3 +113,40 @@
     height: 100px;
 }
 
+
+
+
+/* -------media Query------------- */
+
+@media (max-width: 850px){
+    .Service_contain h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px){
+
+    .Servicess_contain h1{
+        font-size: 2rem;
+    }
+
+    
+
+    .domain_buttons {
+       display: flex;
+       flex-direction: column;
+
+    }
+
+    .butins{
+        padding: 10px 20px;
+    }
+    .cardse_row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    
+
+}

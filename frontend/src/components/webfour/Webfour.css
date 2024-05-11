@@ -45,3 +45,16 @@
 }
 
 
+@media (max-width: 650px){
+  .webfour_cont{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .webtwo_details h1{
+    font-size: 2rem;
+  }
+
+}
+
+

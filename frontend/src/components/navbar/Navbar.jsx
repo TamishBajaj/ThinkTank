@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import {Link} from 'react-scroll'
@@ -8,10 +8,28 @@ import thinklogo from '../../assets/thinklogo.png'
 
 const Navbar = ({ onLoginClick }) => {
 
-const [mobileMenu,setMobileMenu]=useState('false')
-const toggleMenu=()=>{
-  mobileMenu ? setMobileMenu(false) : setMobileMenu(true)
-}
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [currentComponent, setCurrentComponent] = useState('');
+
+    const toggleMenu = () => {
+        setMobileMenu(!mobileMenu);
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const heroComponent = document.getElementById('hero');
+            const yOffset = window.pageYOffset;
+            if (heroComponent && yOffset >= heroComponent.offsetTop) {
+                // User has scrolled past the hero component, close the mobile menu
+                setMobileMenu(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
   return (
     <nav className='main__container'>

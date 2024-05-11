@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Cards.css'
 import imggg from '../../assets/webthree-3.gif'
 import { useNavigate } from 'react-router-dom';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import SwiperCore,{ Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -25,7 +25,7 @@ const Cards = () => {
 
     const navigate = useNavigate();
     const [cards, setCards] = useState([]);
-
+    
     
 
     useEffect(() => {
@@ -61,6 +61,8 @@ const Cards = () => {
         navigate('/events/'+card_id);
       };
 
+      const slidesPerViews = window.innerWidth <= 650 ? 1 : 3;
+
   return (
 
   
@@ -79,10 +81,11 @@ const Cards = () => {
         <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={30}
-                    slidesPerView={3}
+                    slidesPerView={slidesPerViews}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
+                    
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >

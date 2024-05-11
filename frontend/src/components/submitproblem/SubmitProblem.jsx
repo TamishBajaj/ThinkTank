@@ -98,10 +98,10 @@ const SubmitProblem = () => {
             className="problem_input"
           ></textarea>
 
-           <label for="startDate" className='text_form'>Start Date:</label>
+           <label for="startDate" className='text_form spt'>Start Date:</label>
            <input type="date" id="startDate" name="startDate" value={startDate} onChange={onChange} required className="problem_input"/>
 
-           <label for="endDate" className='text_form'>End Date:</label>
+           <label for="endDate" className='text_form spt'>End Date:</label>
            <input type="date" id="endDate" name="endDate" value={endDate} onChange={onChange} required className="problem_input"/>
 
            <input

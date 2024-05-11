@@ -48,3 +48,30 @@
 .webi_btn:hover{
     transform: scale(1.1);
 }
+
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+
+    .webtwo_cont{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .webtwo_detail{
+        margin-left: 20px;
+    }
+    .webtwo_detail h1{
+        font-size: 2rem;
+    }
+    .webtwo_detail p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .webi_btn{
+        margin-bottom: 20px;
+    }
+
+}

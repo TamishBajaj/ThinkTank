@@ -110,3 +110,25 @@
 .work_btn:hover{
     transform: scale(1.1);
 }
+
+
+
+
+@media (max-width: 650px){
+    .values_mob{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        
+    }
+    .mob_info{
+        display: flex;
+        flex-direction: column;
+    }
+    .info_left h1{
+        font-size: 2rem;
+    }
+    .info_left p{
+        font-size: 1.3rem;
+    }
+}

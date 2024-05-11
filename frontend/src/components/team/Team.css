@@ -69,3 +69,26 @@
 .team_btn:hover{
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+    .team_heads h1{
+        font-size: 2rem;
+    }
+    .team_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .team_btn{
+        margin-bottom: 20px;
+    }
+}

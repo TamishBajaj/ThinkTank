@@ -10,7 +10,7 @@ const Contract = () => {
     <div className='contract'>
         <div className='headingss'>
             <h1>How to get Your Work Done?</h1>
-            <h3>Fexible Working Model To meet your specific needs</h3>
+            <h3>Fexible Working Model </h3>
         </div>
 
         <div className='actions'>

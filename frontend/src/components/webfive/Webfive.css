@@ -1,3 +1,16 @@
 .web{
     margin-top: 60px;
 }
+
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+    .proj_headi h1{
+        font-size: 2rem;
+    }
+    .five h3{
+        font-size: 1.3rem;
+    }
+}

@@ -15,7 +15,7 @@ const Mobile2 = () => {
     <div className='mobile_cards'>
 
         <div className='mobile_heads'>
-        <h1>Mobile Application Development</h1>
+        <h1>Mobile App Development</h1>
         <h3>We build future not Apps</h3>
         </div>
 

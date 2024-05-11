@@ -52,3 +52,28 @@
 .freelance_option p{
     color: #7D7C7C;
 }
+
+
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+    .main_head{
+        font-size: 2rem;
+        margin-left: 13px;
+    }
+    .main_p{
+        font-size: 1.3rem;
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    .freelance{
+        display: flex;
+        flex-direction: column;
+    }
+    .freelance_img{
+        margin-left: 10px;
+    }
+}

@@ -24,7 +24,7 @@ const Workings = () => {
 
         <div className='workflow_cards'>
             <div className='workflow_row'>
-                <div className='workflow_plus'>
+                <div className='boxi workflow_plus'>
                     <img src={work1} className='workflow_img' alt=''/>
                     <h3>Requirement Analysis</h3>
 
@@ -33,7 +33,7 @@ const Workings = () => {
                 <div className='workflow_minus'>
                     <img src={arw} alt='' className='worflow_arrow'/>
                 </div>
-                <div className='workflow_plus'>
+                <div className='boxi workflow_plus'>
                     <img src={work2} className='workflow_img' alt=''/>
                     <h3>Design</h3>
 
@@ -56,7 +56,7 @@ const Workings = () => {
 
 
             <div className='workflow_row'>
-                <div className='workflow_plus'>
+                <div className='boxi workflow_plus'>
                     <img src={work6} className='workflow_img' alt=''/>
                     <h3>Maintainance</h3>
 
@@ -65,7 +65,7 @@ const Workings = () => {
                 <div className='workflow_minus'>
                     <img src={arwl} alt='' className='worflow_arrow'/>
                 </div>
-                <div className='workflow_plus'>
+                <div className='boxi workflow_plus'>
                     <img src={work5} className='workflow_img' alt=''/>
                     <h3>Launch</h3>
 
@@ -77,7 +77,7 @@ const Workings = () => {
                     <img src={arwl} alt='' className='worflow_arrow'/>
                 </div>
 
-                <div className='workflow_plus'>
+                <div className='boxi workflow_plus'>
                 <img src={work4} className='workflow_img' alt=''/>
                     <h3>Testing</h3>
                     

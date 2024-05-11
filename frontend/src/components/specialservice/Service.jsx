@@ -27,20 +27,20 @@ const Service = () => {
     }, []);
 
   return (
-    <div className='Service_contain'>
+    <div className='Servicess_contain'>
         <h1>Our Specialized Services</h1>
         <h3>We Render All your Digital Needs</h3>
 
         <div className='domain_buttons'>
-            <button className='web_button' onClick={webProj}>Web Development</button>
-            <button className='mobile_button' onClick={appProj}>Mobile Applications</button>
-            <button className='buisness_button'>Buisness Growth</button>
-            <button className='digital_button'>Digital Marketing</button>
+            <button className='butins web_button' onClick={webProj}>Web Development</button>
+            <button className='butins mobile_button' onClick={appProj}>Mobile Applications</button>
+            <button className='butins buisness_button'>Buisness Growth</button>
+            <button className='butins digital_button'>Digital Marketing</button>
         </div>
 
-        <div className='service_cardss'>
-            <div className='cards_row'>
-                <div className='one_card'>
+        <div className='servicess_cardss'>
+            <div className='cardse_row'>
+                <div className='onee_card'>
                     <img src={rocket} alt='' className='service_icon'/>
                     <h3>Web for Early-Stage Startups</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium atque. Voluptatibus soluta aliquam consequuntur in cum expedita impedit eveniet.</p>
@@ -64,21 +64,21 @@ const Service = () => {
 
             </div>
             
-            <div className='cards_row'>
+            <div className='cardse_row'>
 
-            <div className='one_card'>
+            <div className='onee_card'>
                    <img src={shopping} alt='' className='service_icon'/>
                     <h3>Mobile Applications</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium atque. Voluptatibus soluta aliquam consequuntur in cum expedita impedit eveniet.</p>
                     <button><img src={arrow} alt='' className='icon_button'/></button>
             </div>
-            <div className='one_card'>
+            <div className='onee_card'>
                     <img src={search} alt=''  className='service_icon'/>
                     <h3>Brand Visibilty</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium atque. Voluptatibus soluta aliquam consequuntur in cum expedita impedit eveniet.</p>
                     <button><img src={arrow} alt='' className='icon_button'/></button>
             </div>
-            <div className='one_card'>
+            <div className='onee_card'>
                     <img src={target} alt=''  className='service_icon'/>
                     <h3>Website Revamp</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, praesentium atque. Voluptatibus soluta aliquam consequuntur in cum expedita impedit eveniet.</p>

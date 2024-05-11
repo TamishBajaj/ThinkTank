@@ -63,3 +63,16 @@
 
 
 
+@media (max-width: 650px){
+    .det_head h1{
+        font-size: 2rem;
+    }
+    .det_head h3{
+        font-size: 1.3rem;
+    }
+
+    .det_card_mob{
+        display: flex;
+        flex-direction: column;
+    }
+}

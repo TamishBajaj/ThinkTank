@@ -59,3 +59,21 @@
 .card_detail:hover{
     transform: scale(1.1);
 }
+
+
+
+/* -------media Query------------- */
+
+@media (max-width: 650px){
+    .contnt h1{
+        font-size: 2rem;
+    }
+    .contnt h3{
+        font-size: 1rem;
+    }
+    .card_roww{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

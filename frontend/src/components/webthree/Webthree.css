@@ -66,3 +66,17 @@
     height: 100px;
 }
 
+
+/* -------media Query------------- */
+
+
+@media (max-width: 650px){
+    .Service_contain h1{
+        font-size: 2rem;
+    }
+
+    .cards_row{
+        display: flex;
+        flex-direction: column;
+    }
+}

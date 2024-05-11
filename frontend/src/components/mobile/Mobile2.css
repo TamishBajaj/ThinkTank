@@ -57,3 +57,19 @@
 .mobile_carddetail p{
     margin:10px 0px;
 }
+
+
+
+
+
+
+@media (max-width: 650px){
+    .mobile_heads h1{
+        font-size: 2rem;
+    }
+
+    .mobile_row{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -209,3 +209,28 @@
 }
 
 
+@media (max-width: 650px){
+    .containers {
+        width: 100%; /* Adjust width to fill the entire screen */
+        top: 0; /* Adjust position to align with the top */
+        left: 0; /* Move to the left edge */
+        transform: none; /* Reset transform */
+      }
+    
+      .containers .content {
+        display: none; /* Hide the left side content */
+      }
+    
+      .containers .logreg-box {
+        width: 100%; /* Adjust width to fill the entire screen */
+        border-radius: 0; /* Remove border radius */
+      }
+    
+      .logreg-box .form-box {
+        padding: 20px; /* Add padding to the login box */
+      }
+      .topii{
+        height: 100vh;
+       
+      }
+}

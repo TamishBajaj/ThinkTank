@@ -66,24 +66,22 @@
     border: 1px solid aqua;
 }
 
-@media(max-width:969px){
-    section{
-        padding: 20px 0px;
-    }
-    .main-container h1{
-        font-size: 2rem;
-        line-height: 40px;
-    }
-    .card{
-        flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
 
-@media(max-width:600px){
+       
+@media(max-width:650px){
     
-    .card{
-        flex: 0 0 100%;
-        max-width: 100%;
+    .card-image{
+        height:70px;
+        width: 70px;
+    }
+    .submitSolution{
+        padding: 5px 10px;
+        font-size: 1.1rem;
+    }
+    .card_head h1{
+        font-size: 2rem;
+    }
+    .card h3{
+        font-size: 1.2rem;
     }
 }
