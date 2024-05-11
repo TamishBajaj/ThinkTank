@@ -32,7 +32,7 @@ const Cards = () => {
         // Fetch data from the backend API
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3000/api/v1/events/getAllEvents');
+            const response = await fetch(`${process.env.BASE_URL}/events/getAllEvents`);
             if (!response.ok) {
               throw new Error('Failed to fetch data');
             }

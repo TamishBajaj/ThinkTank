@@ -25,7 +25,7 @@ const PlayerRegister = ({ eventId }) => {
       const onSubmit = async e => {
         e.preventDefault();
         try {
-          const res = await axios.post(`http://localhost:3000/api/v1/teams/registerTeam`, {
+          const res = await axios.post(`${process.env.BASE_URL}/teams/registerTeam`, {
             eventName: eventId,
             email,
             teamName,

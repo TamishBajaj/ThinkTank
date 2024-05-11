@@ -25,7 +25,7 @@ export const NewEvent = () => {
           'x-auth-token': `Bearer ${token}` // Include the JWT token in the request headers
         }
       };
-      const res = await axios.post('http://localhost:3000/api/v1/events/createEvent', formData, config);
+      const res = await axios.post(`${process.env.BASE_URL}/events/createEvent`, formData, config);
       console.log(res.data); // Handle successful event creation (e.g., redirect user)
     } catch (err) {
       console.error(err.response.data);

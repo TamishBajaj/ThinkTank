@@ -11,7 +11,7 @@ const Guidlines = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/api/v1/events/${eventId}`);
+                const response = await fetch(`${process.env.BASE_URL}/events/${eventId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch events');
                 }
