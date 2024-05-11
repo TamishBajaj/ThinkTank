@@ -1,1 +1,0 @@
-export const BASE_URL="https://thinktank-ou2k.onrender.com";

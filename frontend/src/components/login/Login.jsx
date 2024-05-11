@@ -33,7 +33,7 @@ const Login = () => {
        console.log(BASE_URL)
         e.preventDefault();
         try{
-            const res=await axios.post(`${BASE_URL}/api/v1/login`,{email,password});
+            const res=await axios.post(`${BASE_URL}/login`,{email,password});
             console.log("submitted")
             console.log(res.data)
             const { token } = res.data; // Assuming the token is returned in the response data
