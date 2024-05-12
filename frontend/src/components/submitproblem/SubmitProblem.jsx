@@ -2,8 +2,11 @@ import { useState } from 'react';
 import axios from 'axios';
 import './SubmitProblem.css'
 import leftimg from '../../assets/leftimg.jpg'
+import {Navigate, useNavigate} from 'react-router-dom';
 // import { BASE_URL } from '../../baseurl';
 const SubmitProblem = () => {
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     challengeName:'',
@@ -40,6 +43,8 @@ const SubmitProblem = () => {
       const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/events/createEvent`, formData, config);
       console.log(res.data); // Handle successful event creation (e.g., redirect user)
       alert("Event Created Sucessfully");
+      navigate('/')
+
     } catch (err) {
       console.error(err.response.data);
     }
