@@ -3,7 +3,7 @@ import './Guidlines.css';
 import { TiPin } from "react-icons/ti";
 import trophy from '../../assets/trophy.gif';
 import { useParams } from 'react-router-dom';
-import { BASE_URL } from '../../baseurl';
+// import { BASE_URL } from '../../baseurl';
 const Guidlines = () => {
     let { eventId } = useParams();
     const [event, setEvent] = useState(null);
@@ -11,7 +11,7 @@ const Guidlines = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch(`${BASE_URL}/events/${eventId}`);
+                const response = await fetch(`${process.env.REACT_APP_BASE_URL}/events/${eventId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch events');
                 }

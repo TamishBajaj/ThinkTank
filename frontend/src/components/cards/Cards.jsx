@@ -16,7 +16,7 @@ import im3 from '../../assets/card3.gif'
 import im4 from '../../assets/card4.gif'
 import im5 from '../../assets/card5.gif'
 import im6 from '../../assets/card6.gif'
-import { BASE_URL } from '../../baseurl';
+// import { BASE_URL } from '../../baseurl';
 
 
 const Cards = () => {
@@ -32,7 +32,7 @@ const Cards = () => {
         // Fetch data from the backend API
         const fetchData = async () => {
           try {
-            const response = await fetch(`${BASE_URL}/events/getAllEvents`);
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}/events/getAllEvents`);
             if (!response.ok) {
               throw new Error('Failed to fetch data');
             }
