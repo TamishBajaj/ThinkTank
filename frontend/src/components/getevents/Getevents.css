@@ -7,7 +7,7 @@
 .column{
     float: left;
     padding: 10px;
-    height: 100vh;
+    /* height: 100vh; */
     border: 1px solid white;
     border-radius: 1.1rem;
     display: grid;
@@ -173,4 +173,25 @@
 
 .content_r{
     margin-left: 10px;
+}
+
+
+@media (max-width: 650px){
+    /* .column{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .division_cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .right{
+        width: 100%;
+    }
 }

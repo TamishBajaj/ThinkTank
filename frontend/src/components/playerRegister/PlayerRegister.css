@@ -5,6 +5,7 @@
     align-items: center;
    padding: 40px 0;
     background-color: #F6F5F5;
+    
 }
 .color_b{
     display: flex;
@@ -21,7 +22,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    ;
+    margin-top: 120px;
 }
 
 .register_head h1{
@@ -84,4 +85,15 @@
 .reg_btn:hover{
     transform: scale(1.05);
     box-shadow: 0 2px  2px 2px  aqua;
+}
+
+
+@media (max-width: 650px){
+    .input_reg{
+        width: 300px;
+    }
+    .register_head{
+        margin-top: 160px;
+    }
+
 }

@@ -64,3 +64,19 @@
     padding:20px;
 }
 
+
+@media (max-width: 650px){
+    .eligibilty{
+        padding: 0px 10px;
+    }
+    .key_instruction{
+        padding: 0px 10px;
+    }
+    .prize_column{
+        display: flex;
+        flex-direction: column;
+    }
+    .prizes{
+        padding: 0px 10px;
+    }
+}
