@@ -91,7 +91,7 @@ import eye from '../../assets/eye.png'
 
 const Signup = () => {
 
-  const { loginWithRedirect } = useAuth0();
+  
 
   const [formData, setFormData] = useState({ username: '', email: '', password: ''})
   const [error, setError] = useState('');
