@@ -52,6 +52,11 @@ const Login = () => {
             console.error(err.response.data)
         }
     };
+
+
+    const toRegister = () => {
+        navigate('/signup');
+    };
   return (
     <>
 
@@ -99,7 +104,7 @@ const Login = () => {
                 <button type="submit" className='butn'>Sign In</button>
 
                 <div className='login-register'>
-                    <p>Do you have an Account?<a href='/signup' className='register-link'>Sign Up</a></p>
+                    <p>Do you have an Account?<a onClick={toRegister} className='register-link'>Sign Up</a></p>
                 </div>
             </form>
         </div>

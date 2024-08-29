@@ -113,6 +113,10 @@ const Signup = () => {
   }
 }
 
+const toLogin = () => {
+    navigate('/login');
+};
+
 
   return (
     <div className='register_main'>
@@ -174,7 +178,7 @@ const Signup = () => {
         <img className='google_icn' src={google} onClick={() => loginWithRedirect()}/>
 
 
-        <p className='regis'>Have an account?<a href='/login' className='register_link'>Login</a></p>
+        <p className='regis'>Have an account?<a onClick={toLogin} className='register_link'>Login</a></p>
     </div>
   )
 }
