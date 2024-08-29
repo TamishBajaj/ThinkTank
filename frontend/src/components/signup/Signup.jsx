@@ -83,7 +83,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate } from 'react-router-dom';
 import './Register.css'
 import google from '../../assets/google.png'
@@ -175,8 +175,10 @@ const toLogin = () => {
 
         </div>
 
-        <img className='google_icn' src={google} onClick={() => loginWithRedirect()}/>
+        {/* onClick={() => loginWithRedirect()} */}
 
+
+        <img className='google_icn' src={google} />  
 
         <p className='regis'>Have an account?<a onClick={toLogin} className='register_link'>Login</a></p>
     </div>
