@@ -5,6 +5,8 @@
     height: 100vh;
     align-items: center;
 
+    margin-top: 150px;
+
 }
 
 .login_head{
@@ -124,6 +126,10 @@
 
 .register_link{
     color: #FE8C00;
+}
+
+.register_link:hover{
+    cursor: pointer;
 }
 
 

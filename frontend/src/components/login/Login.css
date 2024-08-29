@@ -100,7 +100,9 @@
 
 }
 
-
+.register-link:hover{
+    cursor: pointer;
+}
 
 
 

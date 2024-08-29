@@ -123,7 +123,7 @@ const toLogin = () => {
 
         <div className='login_head'>
          <h1>Create your new account.</h1>
-         <h3>Create an account to start looking for the food you like </h3>
+         <h3>Create an account to start looking for the career you like </h3>
 
         </div>
 
