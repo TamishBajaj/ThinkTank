@@ -1,0 +1,182 @@
+.register_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.login_head{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login_head h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.login_head h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #878787;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.inpt_fldd{
+    border: 1px solid #878787;
+    height: 52px;
+    width: 327px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    padding-left: 10px;
+}
+
+.inpp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    
+}
+
+.lbl{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.forgot_link{
+    margin-top: 10px;
+    margin-left: 180px;
+    color: #FE8C00;
+    font-size: 14px;
+}
+
+.signin_btns{
+    width: 327px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #FE8C00;
+    font-size: 14px;
+    color: white;
+    margin-top: 2px;
+    transition: 0.3s ease-in;
+}
+
+.signin_btns:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.fancy_style{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+.fancy_style p{
+    font-size: 14px;
+    color: #878787;
+}
+
+.lines{
+    width: 99.5px;
+    height: 1px;
+    background-color: #878787;
+
+}
+
+.google_icn{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in;
+}
+
+.google_icn:hover{
+    transform: scale(1.1);
+    border:3px solid #FE8C00;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.regis{
+    font-size: 14px;
+    
+}
+
+.register_link{
+    color: #FE8C00;
+}
+
+
+.eye_special {
+    
+    position: relative;
+    display: inline-block;
+}
+
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust based on your layout */
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.checkbox_class{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.highlight{
+    color: #FE8C00;
+}
+
+.check{
+    color: #FE8C00;
+   
+}
+
+
+/* =====Media Queries (Small devices)============= */
+
+@media  screen and (max-width:600px) {
+
+    .register_main{
+        padding: 0px 14px;
+        margin-top: -15px;
+    }
+
+    .check{
+        margin-bottom: 20px;
+    }
+
+    .google_icn{
+        margin: 0px;
+    }
+
+    
+}

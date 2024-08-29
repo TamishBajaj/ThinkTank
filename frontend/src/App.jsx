@@ -11,6 +11,7 @@ import EventDisplay from './pages/EventDisplayPage'
 import Registeryou from './pages/registerYou'
 import Webdev from './pages/Webdev';
 import Mobiledev from './pages/Mobiledev';
+import SignupPage from './pages/SignupPage';
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
          <Route path='/registerme' element={< Registeryou/>} />
          <Route path='/webdev' element={< Webdev/>} />
          <Route path='/mobiledev' element={< Mobiledev/>} />
+         <Route path='/signup' element={< SignupPage/>} />
 
           
           </Routes>
