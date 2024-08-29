@@ -3,8 +3,11 @@ import './PlayerRegister.css'
 import axios from 'axios';
 
 import top from '../../assets/card1.gif'
+import { useNavigate, useParams } from 'react-router-dom';
 // import { BASE_URL } from '../../baseurl';
 const PlayerRegister = ({ eventId }) => {
+
+  const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         email:'',
@@ -41,6 +44,10 @@ const PlayerRegister = ({ eventId }) => {
           console.error(err.response.data);
         }
       };
+
+      const redirec = () => {
+        navigate('/');
+    };
 
 
   return (
@@ -111,7 +118,7 @@ const PlayerRegister = ({ eventId }) => {
                 <option value="textile">Textile</option>
             </select>  
             <div>
-            <button type="submit" className="reg_btn">
+            <button type="submit" className="reg_btn"  onClick={redirec}>
                 Submit
             </button>
             </div>

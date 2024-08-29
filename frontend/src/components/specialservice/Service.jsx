@@ -34,8 +34,8 @@ const Service = () => {
         <div className='domain_buttons'>
             <button className='butins web_button' onClick={webProj}>Web Development</button>
             <button className='butins mobile_button' onClick={appProj}>Mobile Applications</button>
-            <button className='butins buisness_button'>Buisness Growth</button>
-            <button className='butins digital_button'>Digital Marketing</button>
+            <button className='butins buisness_button' onClick={webProj}>Buisness Growth</button>
+            <button className='butins digital_button' onClick={appProj}>Digital Marketing</button>
         </div>
 
         <div className='servicess_cardss'>

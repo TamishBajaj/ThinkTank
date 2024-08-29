@@ -41,7 +41,7 @@ const Navbar = ({ onLoginClick }) => {
             <li><Link to='contract' smooth={true} offset={-260} duration={500}>let's Work</Link></li>
             <li><Link to='card_container' smooth={true} offset={-260} duration={500}>Events</Link></li>
             <li><Link to='industry' smooth={true} offset={-260} duration={500}>Our departments</Link></li>
-            <button className='nav__button' onClick={onLoginClick}>Host</button>
+            <button className='nav__button' onClick={onLoginClick}>Login</button>
             {/* <li><Link className='nav__button'>Login</Link></li> */}
         </ul>
         <img src={menuicon} alt="" className='menu__icon' onClick={toggleMenu}/>
